@@ -21,6 +21,7 @@ function App() {
       <div>
         <Cards
           cities={data}
+          
         />
       </div>
       <hr />
