@@ -1,0 +1,43 @@
+.nav {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid darkgray;
+  max-height: 42px;
+  box-shadow: 1px 1px 3px black;
+  z-index: 100;
+  background-color: #ffffff;
+  position: fixed;
+  width: 100%;
+  margin-top: -51px;
+}
+.nav img {
+  position: relative;
+  background-color: #ffffff;
+}
+.nav span {
+  display: block;
+  padding-left: 15px;
+  min-width: 200px;
+  width: 100%;
+  margin: auto;
+  text-align: left;
+  font-size: 1.2rem;
+}
+.nav form {
+  display: flex;
+  justify-content: right;
+}
+.nav form input {
+  border-color: lightgray;
+  margin: 5px;
+  border-radius: 10px;
+}
+.nav form .bar {
+  padding-left: 15px;
+  padding-right: 15px;
+  min-width: 500px;
+  width: 40%;
+}
+.nav form .button:active {
+  background-color: lightgray;
+}

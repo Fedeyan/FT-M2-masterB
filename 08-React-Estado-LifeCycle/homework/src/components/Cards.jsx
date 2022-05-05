@@ -1,17 +1,18 @@
 import React from 'react';
-import './Cards.css';
+import Styles from './Cards.module.css';
 
 import Card from './Card.jsx';
 
 export default function Cards({cities, onClose}) {
   if(cities){
     return (
-      <div className='cards'>
+      <div className={Styles.div}>
         {cities.map(c => <Card
-            max={c.max}
-            min={c.min}
+            key={c.id}
+            max={Math.round(c.main.temp_max)}
+            min={Math.round(c.main.temp_min)}
             name={c.name}
-            img={c.img}
+            img={c.weather[0].icon}
             onClose={() => onClose(c.id)}
             id={c.id}
           /> )}
@@ -19,7 +20,7 @@ export default function Cards({cities, onClose}) {
     );
   } else {
     return(
-      <div>Sin ciudades</div>
+      <div className={Styles.div}>Sin ciudades</div>
     )
   }
 }

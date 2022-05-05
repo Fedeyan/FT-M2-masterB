@@ -1,6 +1,8 @@
 .card {
-  margin: 20px;
+    margin: 20px;
   width: 18rem;
+  max-height: 10rem;
+  box-shadow: 1px 1px 5px black;
 }
 
 .card-title {
